@@ -1,0 +1,72 @@
+<div class="aa">
+  <div class="logo py-4">
+    <img src="./assets/images/LOGO PNG-05.png" alt="Company Logo" />
+  </div>
+</div>
+
+<mat-nav-list>
+  <mat-accordion>
+    <ng-container *ngFor="let item of items">
+
+      <!-- Main Items -->
+      <mat-expansion-panel *ngIf="item.firstChild">
+        <mat-expansion-panel-header class="main_buttons">
+          <span> <i class="{{item.icon}}"></i></span>
+          <span class="head-title">{{ item.name }}</span>
+        </mat-expansion-panel-header>
+
+        <!-- First Child Items -->
+        <ng-container *ngFor="let first of item.firstChild">
+
+          <mat-expansion-panel *ngIf="first.secondChild">
+            <mat-expansion-panel-header class="sub_buttons">
+              <span>{{ first.name }}</span>
+            </mat-expansion-panel-header>
+
+            <mat-panel-title *ngFor="let second of first.secondChild">
+
+              <mat-expansion-panel class="std_buttons" *ngIf="second.thirdChild">
+                <mat-expansion-panel-header>
+                  <span>{{ second.name }}</span>
+                </mat-expansion-panel-header>
+
+                <mat-panel-title class="sub_std_buttons" *ngFor="let third of second.thirdChild">
+                  <mat-nav-list>
+                    <a mat-list-item>
+                      <span class="items">{{ third.name }}</span>
+                    </a>
+                  </mat-nav-list>
+                </mat-panel-title>
+              </mat-expansion-panel>
+
+
+              <mat-nav-list class="sub_std_buttons" *ngIf="!second.thirdChild">
+                <a mat-list-item>
+                  <span class="items">{{ second.name }}</span>
+                </a>
+              </mat-nav-list>
+
+            </mat-panel-title>
+
+          </mat-expansion-panel>
+
+          <!-- No Second Child Items -->
+          <mat-nav-list *ngIf="!first.secondChild">
+            <a mat-list-item>
+              <span class="items">{{ first.name }}</span>
+            </a>
+          </mat-nav-list>
+        </ng-container>
+      </mat-expansion-panel>
+
+      <!-- No First Child Items -->
+      <mat-nav-list *ngIf="!item.firstChild">
+        <a mat-list-item>
+          <span class="items">{{ item.name }}</span>
+        </a>
+      </mat-nav-list>
+
+    </ng-container>
+
+  </mat-accordion>
+</mat-nav-list>

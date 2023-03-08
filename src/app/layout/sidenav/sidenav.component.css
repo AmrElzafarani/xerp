@@ -1,0 +1,155 @@
+.mat-icon {
+    vertical-align: middle;
+    margin-right: 1rem;
+}
+
+.logo {
+    text-align: center;
+    padding: 2.6rem 1rem;
+}
+
+.logo img {
+    /* width: 10.5vw; */
+    height: 14.6vh;
+}
+
+
+.mat-expansion-panel-spacing {
+    margin: 0;
+}
+
+::ng-deep .mat-expansion-panel-body {
+    padding: 0 !important;
+}
+
+.mat-expansion-panel:not([class*=mat-elevation-z]) {
+    box-shadow: none;
+}
+
+.mat-expansion-panel-header.mat-expanded:focus {
+    background-color: #00447E;
+    color: #fff;
+}
+
+
+.parent-panel-head {
+    color: #00447E;
+    font-weight: 600;
+}
+
+/* .head-title {
+    padding-left: 10px;
+} */
+
+.mat-expansion-panel-header,
+.items {
+    color: #00447E;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.mdc-list {
+    width: 100%;
+}
+
+
+::ng-deep .mat-expansion-indicator::after {
+    transform: rotate(320deg) !important;
+}
+
+.main_buttons{
+    width: 100%;
+    padding-right: 1rem;
+    padding-left: 0.5rem;
+    font-weight: 600;
+}
+
+.sub_buttons{    
+    width: 100%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    font-weight: 500;
+}
+
+.std_buttons{
+    width: 100%;
+    padding-left: 0.9rem;
+}
+
+.sub_std_buttons{
+    width: 100%;
+    padding-left: 1.1rem;
+}
+
+
+/* ::ng-deep .mat-expansion-panel-header.mat-expanded:focus .mat-expansion-indicator {
+    transform: rotate(90deg) !important;
+} */
+
+/* ::ng-deep .mat-expansion-indicator  {
+    transform: rotate(90deg) !important;
+} */
+
+/* .first-child-empty {
+    padding-left: 6px;
+}
+
+.second-child-head {
+    padding-left: 16px;
+}
+
+.third-child {
+    width: 100%;
+}
+
+.first-child-head {
+    width: 100%;
+} */
+
+
+/* .mdc-list {
+    width: 100%;
+} */
+
+
+/* @media only screen and (max-width: 1200px) {
+    .second-child-head {
+        padding-left: 16px;
+        width: 13rem;
+    }
+
+    .third-child {
+        width: 13vw;
+    }
+
+    .first-child-head {
+        width: 16.2rem;
+    }
+}
+ */
+
+
+/* .mat-list-item {
+    color: #94a3b8 !important;
+    font-size: 0.8rem;
+    height: 44px !important;
+    margin-bottom: 4px;
+}
+
+.mat-list-item:hover {
+    color: #f2f5f7 !important;
+}
+
+.mat-ist-item-content {
+    border-radius: 5px;
+    margin: 0 8px;
+
+}
+
+mat-ist-item-content:hover {
+    background: #2c3344 !important;
+}
+
+.list-item.active {
+    color: #f2f5f7 !important;
+} */

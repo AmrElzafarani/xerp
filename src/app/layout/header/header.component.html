@@ -1,0 +1,40 @@
+<mat-toolbar>
+    <button mat-icon-button class="toggleButton" (click)="toggleSidebar()">
+        <mat-icon>menu</mat-icon>
+    </button>
+
+    <div class="icons">
+        <div class="group-icons">
+            <div class="header-icons" [mat-menu-trigger-for]="langMenu">
+                <i class="fa fa-language"></i>
+            </div>
+            <mat-menu class="lang-menu" #langMenu="matMenu">
+                <mat-radio-group [(ngModel)]="selectedLanguage" class="radio-button" (change)="switchLanguage()">
+                    <mat-radio-button *ngFor="let language of languages"
+                        [value]="language.value">{{language.label}}</mat-radio-button>
+                </mat-radio-group>
+            </mat-menu>
+            <div class="header-icons">
+                <!-- <i class="fa-solid fa-people-roof"></i> -->
+                <i class="fa fa-bell"></i>
+            </div>
+            <div class="header-icons">
+                <i class="fa fa-bell"></i>
+            </div>
+        </div>
+
+        <div class="header-profile">
+            <button mat-button [matMenuTriggerFor]="menu" class="user">
+                Hi,<span class="loggedin-name"> Amrrrrrrrrrrrrr</span>
+                <img src="./assets/images/profile.jpg" alt="profile" class="user-image">
+            </button>
+            <mat-menu #menu="matMenu">
+                <button mat-menu-item>
+                    <mat-icon>exit_to_app</mat-icon>
+                    <span>{{'hello' | translate}}</span>
+                </button>
+            </mat-menu>
+        </div>
+    </div>
+
+</mat-toolbar>

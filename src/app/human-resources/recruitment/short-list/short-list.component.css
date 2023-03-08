@@ -1,0 +1,41 @@
+.short-list {
+    max-width: 90%;
+    margin: 0 auto;
+    overflow-x: auto;
+    margin-top: 10%;
+    border-radius: 10px;
+}
+
+th, td {
+    color: #00447E;
+}
+
+::ng-deep .mat-mdc-icon-button {
+    background-color: #00447E;
+}
+
+::ng-deep .mat-mdc-icon-button[disabled] {
+    width: 24px;
+    height: 24px;
+}
+
+::ng-deep .mat-mdc-icon-button .mat-mdc-paginator-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+::ng-deep .mat-mdc-paginator-container {
+    justify-content: center !important;
+}
+
+/* ::ng-deep .mdc-icon-button .mat-mdc-icon-button{
+    width: 24px;
+    height: 24px;
+} */
+/* .paginator-button {
+    height: 24px;
+    width: 24px;
+    font-size: 12px;
+} */
+

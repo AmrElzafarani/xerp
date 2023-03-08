@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+.ltr {
+    @import 'themes/_en';
+}
+
+.rtl {
+    @import 'themes/_ar';
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+/* Remove ScrollBar from Sidenave */
+.mat-drawer-inner-container::-webkit-scrollbar {
+    display: none;
+}

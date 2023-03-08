@@ -1,0 +1,87 @@
+mat-toolbar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #00447E;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+button {
+    outline: none;
+    border: 0;
+    background: transparent;
+}
+
+.loggedin-name {
+    color: orange;
+}
+
+.user {
+    font-size: 14px;
+}
+
+.user-image {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+}
+
+.mat-menu-content {
+    width: 160px;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.group-icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100px;
+    height: 100%;
+}
+
+.header-icons {
+    cursor: pointer;
+    height: 100%;
+    position: relative;
+    width: 30px;
+}
+
+.header-icons i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+}
+
+.header-profile {
+    height: 100%;
+    position: relative;
+}
+
+
+.radio-button {
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0;
+    align-items: flex-start;
+}
+
+.radio-label {
+    align-self: center;
+}
+
+@media only screen and (min-width: 641px) {
+    .toggleButton {
+        visibility: hidden;
+    }
+}

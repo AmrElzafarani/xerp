@@ -41,7 +41,7 @@
 
 
               <mat-nav-list class="sub_std_buttons" *ngIf="!second.thirdChild">
-                <a mat-list-item>
+                <a mat-list-item [routerLink]="second.path">
                   <span class="items">{{ second.name }}</span>
                 </a>
               </mat-nav-list>
@@ -52,7 +52,7 @@
 
           <!-- No Second Child Items -->
           <mat-nav-list *ngIf="!first.secondChild">
-            <a mat-list-item>
+            <a mat-list-item [routerLink]="first.path">
               <span class="items">{{ first.name }}</span>
             </a>
           </mat-nav-list>

@@ -8,7 +8,7 @@ const routes: Routes = [
     component: DashboardComponent
   },
   {
-    path: "",
+    path: "HR",
     component: DashboardComponent,
     loadChildren: () => import('../human-resources/human-resources.module').then((m) => m.HumanResourcesModule)
   }

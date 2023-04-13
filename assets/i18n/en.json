@@ -1,0 +1,20 @@
+{
+    "Hi": "Hi",
+    "name": "Name",
+    "number": "No.",
+    "hr code": "HR Code",
+    "email": "E-mail",
+    "mobile number": "Mobile number",
+    "status": "Status",
+    "actions": "Actions",
+    "add new": "Add New",
+    "show active accounts only": "Show active accounts only",
+    "search": "Search",
+    "national_id": "National ID",
+    "nationality": "nationality",
+    "national_id_type": "Type",
+    "exp_date": "Exp. Date",
+    "residence_exp_date": "residence_exp_date",
+    "is_expired": "Expired",
+    "Job Title ": "Job title"
+}
